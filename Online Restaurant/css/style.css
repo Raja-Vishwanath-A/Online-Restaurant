@@ -1,0 +1,287 @@
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* nav-bar height */
+:root {
+    --navbar-height: 40px;
+}
+
+
+/* Navigation Bar  */
+
+#navbar {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: antiquewhite; */
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Navigation bar : logo and image  */
+
+#logo {
+    /* border: 2px solid red; */
+    margin: 5px 10px;
+}
+
+#logo img {
+    height: 45px;
+    margin: 4px;
+}
+
+
+/* Navigation bar : list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto';
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.0rem;
+}
+
+#navbar ul li a {
+    display: block;
+    /* a tag is inline tag. No padding, changing it to block element */
+    padding: 7px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px black;
+    /* background-color: black; */
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    text-shadow: none;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px;
+    height: 310px;
+    /* position: relative; */
+}
+
+#home::before {
+    content: "";
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height:380px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    text-align: center;
+}
+
+#home p {
+    font-family: "Roboto", serif;
+    color: white;
+    size: 1.7rem;
+    text-shadow: 0px 0px 4px black;
+    text-align: center;
+    padding: 2px;
+}
+
+
+/* Services Section */
+#services {
+    display: flex;
+    margin: 10px 34px;
+    /* border: 4px solid green; */
+}
+
+#services .box {
+    border: 3px solid brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 10px;
+    border-radius: 20px;
+    background-color: #fff8f8;
+}
+
+.box img {
+    height: 150px;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid red;
+}
+
+.box p {
+    text-align: center;
+    padding: 10px 10px;
+    font-family: "Roboto", serif;
+}
+
+/* Clients Section */
+
+#client-section {
+    height:333px;
+}
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item img {
+    height: 170px;
+}
+
+.client-item {
+    margin: 20px;
+}
+
+#client-section::before {
+    content: "";
+    background: url('../bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 333px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Contact Section */
+
+#contact::before {
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 636px;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#contact-box {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: "Bree Serif", serif;
+}
+
+#contact-box input[type='submit'], 
+#contact-box input[type='reset'] {
+    width: 200px;
+    margin: 20px 10px 10px 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group input:hover {
+    background-color: white;
+    border: 3px solid rgb(77, 0, 0);
+    cursor: pointer;
+}
+.form-group textarea:hover {
+    background-color: white;
+    border: 3px solid rgb(77, 0, 0);
+    cursor: pointer;
+}
+/* footer section */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+}
+
+/* Utility classes */
+
+.h-primary {
+    font-family: "Bree Serif", serif;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-family: "Bree Serif", serif;
+    font-size: 1.4rem;
+    padding: 4px;
+}
+
+.btn {
+    padding: 6px 10px;
+    color: white;
+    background-color: #458321;
+    border: 2px solid aliceblue;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}

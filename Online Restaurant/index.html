@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwa Online Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo-images/main-logo.png" alt="mylogo">
+        </div>
+        <ul>
+            <li class="list-item"><a href="#home">Home</a></li>
+            <li class="list-item"><a href="#services-container">Services</a></li>
+            <li class="list-item"><a href="#client-section">Clients</a></li>
+            <li class="list-item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">
+            Welcome to Vishwa Online Restaurant
+        </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque necessitatibus beatae quisquam nihil.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque accusamus in quia tempora ut?</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center"> Our services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="bg3.jpg" alt="bg2.jpg">
+                <h2 class="h-secondary">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ab asperiores quo
+                    ipsum. Tenetur in iure necessitatibus consequatur, fuga voluptates. Illo quae consequuntur neque
+                    doloremque in, provident commodi quibusdam tenetur at iste vero nemo cupiditate quidem eligendi
+                    reprehenderit magnam dolor!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="bg1.jpg" alt="bg1.jpg">
+                <h2 class="h-secondary">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ab asperiores quo
+                    ipsum. Tenetur in iure necessitatibus consequatur, fuga voluptates. Illo quae consequuntur neque
+                    doloremque in, provident commodi quibusdam tenetur at iste vero nemo cupiditate quidem eligendi
+                    reprehenderit magnam dolor!
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="bg2.jpg" alt="bg3.jpg">
+                <h2 class="h-secondary">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ab asperiores quo
+                    ipsum. Tenetur in iure necessitatibus consequatur, fuga voluptates. Illo quae consequuntur neque
+                    doloremque in, provident commodi quibusdam tenetur at iste vero nemo cupiditate quidem eligendi
+                    reprehenderit magnam dolor!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo-images/client-1.png" alt="client-1">
+            </div>
+            <div class="client-item">
+                <img src="logo-images/client-2.png" alt="client-1">
+            </div>
+            <div class="client-item">
+                <img src="logo-images/client-3.png" alt="client-1">
+            </div>
+            <div class="client-item">
+                <img src="logo-images/client-4.png" alt="client-1">
+            </div>
+            <div class="client-item">
+                <img src="logo-images/client-5.png" alt="client-1">
+            </div>
+            <div class="client-item">
+                <img src="logo-images/client-6.png" alt="client-1">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="nobackend.php">
+                <div class="form-group">
+                    <label for="myname">Name:</label>
+                    <input type="text" id="myname" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <label for="myemail">Email id:</label>
+                    <input type="email" id="myemail" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="myphone">Phone Number:</label>
+                    <input type="phone" id="myphone" placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="mytext">Message:</label>
+                    <textarea name="mytext" id="mytextarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group buttons">
+                    <input type="submit" value="Submit now">
+                    <input type="reset" value="Reset now">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; VishwaOnlineRestaurant.com.  All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
